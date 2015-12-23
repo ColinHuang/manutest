@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ -d /lib/firmware ]; then
+    echo "/lib/firmware presents and copy firmware"
+fi
+
+if [ -d /lib/modules ]; then
+    echo "/lib/modules presents and copy modules"
+fi
+
+
+
+counter=1
+while [ $counter -le 100 ]
+do
+    echo $counter
+    ((counter++))
+    sleep 1
+done
+echo All done
